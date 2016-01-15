@@ -7,15 +7,15 @@ $(document).ready(function() {
     var hemi = $("select#hemi").val();
     var devel = $("select#devel").val();
     var cheese = $("select#cheese").val();
-
     if (river === "riverYes") {
       if (temp === "tempCool") {
         if (hemi === "hemiNorth") {
           if (devel === "develYes") {
             if (cheese === "cheeseYes") {
               $('#Milwaukee').show();
-            } else {
-              $('#chooseAgain').show();
+              $('#PortlandMaine').hide();
+              $('#elPaso').hide();
+              $('#Brazil').hide();
               }
             }
           }
@@ -27,26 +27,58 @@ $(document).ready(function() {
           if (devel === "develYes") {
             if (cheese === "cheeseNo") {
               $('#PortlandMaine').show();
-            } else {
-              $('#chooseAgain').show();
+              $('#elPaso').hide();
+              $('#Brazil').hide();
+              $('#Milwaukee').hide();
               }
             }
           }
         }
       }
-      if (river === "riverYes") {
-        if (temp === "tempHot") {
-          if (hemi === "hemiNorth") {
-            if (devel === "develYes") {
-              if (cheese === "cheeseYes") {
-                $('#elPaso').show();
-              } else {
-                $('#chooseAgain').show();
+    if (river === "riverYes") {
+      if (temp === "tempHot") {
+        if (hemi === "hemiNorth") {
+          if (devel === "develYes") {
+            if (cheese === "cheeseYes") {
+              $('#elPaso').show();
+              $('#Brazil').hide();
+              $('#Milwaukee').hide();
+              $('#PortlandMaine').hide();
+              }
+            }
+          }
+        }
+      }
+    if (river === "riverYes") {
+      if (temp === "tempHot") {
+        if (hemi === "hemiSouth") {
+          if (devel === "develYes") {
+            if (cheese === "cheeseYes") {
+              $('#Brazil').show();
+              $('#elPaso').hide();
+              $('#Milwaukee').hide();
+              $('#PortlandMaine').hide();
+              }
+            }
+          }
+        }
+      }
+      if (river === "riverNo") {
+        if (temp === "tempCool") {
+          if (hemi === "hemiSouth") {
+            if (devel === "develNo") {
+              if (cheese === "cheeseNo") {
+                $('#Antarctica').show();
+                $('#Brazil').hide();
+                $('#elPaso').hide();
+                $('#Milwaukee').hide();
+                $('#PortlandMaine').hide();
                 }
               }
             }
           }
         }
+
     event.preventDefault();
 
     });
