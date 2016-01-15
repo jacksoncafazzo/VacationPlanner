@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Vacation Planner</title>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Let's find a place perfect for your vacation!</h1>
+    <div id="prefs">
+      <form>
+        <div class="form-group">
+          <label for="river">Do you like rivers or lakes?</label>
+          <select form="riverForm" id="river">
+            <option value="riverYes">I like fresh water!</option>
+            <option value="riverNo">I don't like rivers</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="temp">How warm do you like your vacation?</label>
+          <select form="tempForm" id="temp">
+            <option value="tempCool">I like chilly climes</option>
+            <option value="tempMod">I like it right in the middle</option>
+            <option value="tempHot">I enjoy a hot vacation</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="hemi">Do you prefer...</label>
+          <select form="hemiForm" id="hemi">
+            <option value="hemiNorth">the Northern Hemisphere</option>
+            <option value="hemiSouth">the Southern Hemisphere</option>
+            <option value="hemiEquator">the Equator</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="devel">More or less developed nation?</label>
+          <select form="develForm" id="devel">
+            <option value="develYes">More developed</option>
+            <option value="develNo">Less developed</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="cheese">Cheese?</label>
+          <select form="cheeseForm" id="cheese">
+            <option value="cheeseYes">Must have cheese</option>
+            <option value="cheeseNo">Cheese not important</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Find my dream destination!</button>
+      </form>
+    </div>
+    <p id="Milwaukee">You should check out the beautiful city of Milwaukee, Illinois! Fantastic chedder!
+    <br><img src="img/Milwaukee.png"></p>
+    <p id="PortlandMaine">Have you investigated the lovely city of Portland, Maine? It has fresh AND salt water!
+    <br><img src="img/portland.jpg"></p>
+<p id="elPaso">How about the sunny, multicultural El Paso, Texas? Try the queso fresca!</p>
+    <p id="chooseAgain">We couldn't find a match, try a different combo.</p>
+  </body>
+</html>
