@@ -1,7 +1,15 @@
-#Milwaukee, #PortlandMaine, #elPaso, #Brazil, #Antarctica {
+#Milwaukee, #PortlandMaine, #elPaso, #Brazil, #Antarctica, #whoops {
   display: none;
 }
 
 img {
   max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  text-align: center;
 }
