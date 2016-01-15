@@ -14,10 +14,12 @@ $(document).ready(function() {
             if (devel === "develYes") {
               if (cheese === "cheeseYes") {
                 var result = "yes";
-                $('#Milwaukee').show();
+                $('#Milwaukee').fadeIn();
                 $('#PortlandMaine').hide();
                 $('#elPaso').hide();
                 $('#Brazil').hide();
+                $('#Antarctica').hide();
+                $('#whoops').hide();
                 }
               }
             }
@@ -29,10 +31,12 @@ $(document).ready(function() {
             if (devel === "develYes") {
               if (cheese === "cheeseNo") {
                 var result = "yes";
-                $('#PortlandMaine').show();
+                $('#PortlandMaine').fadeIn();
                 $('#elPaso').hide();
                 $('#Brazil').hide();
                 $('#Milwaukee').hide();
+                $('#Antarctica').hide();
+                $('#whoops').hide();
                 }
               }
             }
@@ -44,10 +48,12 @@ $(document).ready(function() {
             if (devel === "develYes") {
               if (cheese === "cheeseYes") {
                 var result = "yes";
-                $('#elPaso').show();
+                $('#Antarctica').hide();
+                $('#elPaso').fadeIn();
                 $('#Brazil').hide();
                 $('#Milwaukee').hide();
                 $('#PortlandMaine').hide();
+                $('#whoops').hide();
                 }
               }
             }
@@ -59,10 +65,12 @@ $(document).ready(function() {
             if (devel === "develYes") {
               if (cheese === "cheeseYes") {
                 var result = "yes";
-                $('#Brazil').show();
+                $('#Antarctica').hide();
+                $('#Brazil').fadeIn();
                 $('#elPaso').hide();
                 $('#Milwaukee').hide();
                 $('#PortlandMaine').hide();
+                $('#whoops').hide();
                 }
               }
             }
@@ -74,18 +82,19 @@ $(document).ready(function() {
             if (devel === "develNo") {
               if (cheese === "cheeseNo") {
                 var result = "yes";
-                $('#Antarctica').show();
+                $('#Antarctica').fadeIn();
                 $('#Brazil').hide();
                 $('#elPaso').hide();
                 $('#Milwaukee').hide();
                 $('#PortlandMaine').hide();
+                $('#whoops').hide();
                 }
               }
             }
           }
         }
       if (result === "no") {
-        $('#whoops').show();
+        alert('Whoops, no results for those selections, try something else!')
       }
     event.preventDefault();
 
