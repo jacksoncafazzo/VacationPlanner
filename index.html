@@ -10,61 +10,70 @@
     <title>Vacation Planner</title>
   </head>
   <body>
-    <div class="container">
-    <h1>Let's find a perfect place for your vacation!</h1>
-    <div id="prefs">
-      <form>
-        <div class="form-group">
-          <label for="river">Do you like rivers and lakes?</label>
-          <select form="riverForm" id="river">
-            <option value="riverYes">I like fresh water!</option>
-            <option value="riverNo">I don't like rivers</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="temp">How warm do you like your vacation?</label>
-          <select form="tempForm" id="temp">
-            <option value="tempCool">I like chilly climes</option>
-            <option value="tempHot">I enjoy a hot vacation</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="hemi">Which hemisphere do you prefer?</label>
-          <select form="hemiForm" id="hemi">
-            <option value="hemiNorth">the Northern Hemisphere</option>
-            <option value="hemiSouth">the Southern Hemisphere</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="devel">More or less developed nation?</label>
-          <select form="develForm" id="devel">
-            <option value="develYes">More developed</option>
-            <option value="develNo">Less developed</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="cheese">Cheese?</label>
-          <select form="cheeseForm" id="cheese">
-            <option value="cheeseYes">Must have cheese</option>
-            <option value="cheeseNo">Cheese not important</option>
-          </select>
-        </div>
-        <button type="submit" class="btn">Find my dream destination!</button>
-      </form>
+    <div class="container-fluid">
+      <div class="page-header">
+        <h1>Let's find a perfect place for your vacation!</h1>
+      </div>
     </div>
-    <p></p>
-    <div id="results">
-      <p id="Milwaukee">You should check out the beautiful city of Milwaukee, Illinois! Fantastic chedder!
-      <br><img src="img/Milwaukee.png"></p>
-      <p id="PortlandMaine">Have you investigated the lovely city of Portland, Maine? It has fresh AND salt water! Sadly, no cheese though.
-      <br><img src="img/portland.jpg"></p>
-      <p id="elPaso">How about the sunny, multicultural El Paso, Texas? Try the queso fresca!
-      <br><img src="img/elpaso.jpg"></p>
-      <p id="Brazil">Based on your choices, we think Brazil is a good bet for you!
-      <br><img src="img/brazil.jpg"></p>
-      <p id="Antarctica">Well, if cheese really isn't important, you can visit Antarctica!
-      <br><img src="img/antarctica.jpg"></p>
-      <p id="whoops">Whoops, no results for those selections, try something else!</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div id="prefs">
+            <form>
+              <div class="form-group">
+                <label for="river">Do you like rivers and lakes?</label>
+                <select form="riverForm" id="river">
+                  <option value="riverYes">I like fresh water!</option>
+                  <option value="riverNo">I don't like rivers</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="temp">How warm do you like your vacation?</label>
+                <select form="tempForm" id="temp">
+                  <option value="tempCool">I like chilly climes</option>
+                  <option value="tempHot">I enjoy a hot vacation</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="hemi">Which hemisphere do you prefer?</label>
+                <select form="hemiForm" id="hemi">
+                  <option value="hemiNorth">the Northern Hemisphere</option>
+                  <option value="hemiSouth">the Southern Hemisphere</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="devel">More or less developed nation?</label>
+                <select form="develForm" id="devel">
+                  <option value="develYes">More developed</option>
+                  <option value="develNo">Less developed</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="cheese">Cheese?</label>
+                <select form="cheeseForm" id="cheese">
+                  <option value="cheeseYes">Must have cheese</option>
+                  <option value="cheeseNo">Cheese not important</option>
+                </select>
+              </div>
+              <button type="submit" class="btn-primary">Find my dream destination!</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div id="results">
+            <p id="Milwaukee">You should check out the beautiful city of Milwaukee, Illinois! Fantastic chedder!<br>
+            <img src="img/Milwaukee.png"></p>
+            <p id="PortlandMaine">Have you investigated the lovely city of Portland, Maine? It has fresh AND salt water! Sadly, no cheese though.<br>
+            <img src="img/portland.jpg"></p>
+            <p id="elPaso">How about the sunny, multicultural El Paso, Texas? Try the queso fresca!<br>
+            <img src="img/elpaso.jpg"></p>
+            <p id="Brazil">Based on your choices, we think Brazil is a good bet for you!<br>
+            <img src="img/brazil.jpg"></p>
+            <p id="Antarctica">Well, if cheese really isn't important, you can visit Antarctica!<br>
+            <img src="img/antarctica.jpg"></p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
