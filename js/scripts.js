@@ -28,6 +28,7 @@ $(document).ready(function() {
           if (hemi === "hemiNorth") {
             if (devel === "develYes") {
               if (cheese === "cheeseNo") {
+                var result = "yes";
                 $('#PortlandMaine').show();
                 $('#elPaso').hide();
                 $('#Brazil').hide();
@@ -42,6 +43,7 @@ $(document).ready(function() {
           if (hemi === "hemiNorth") {
             if (devel === "develYes") {
               if (cheese === "cheeseYes") {
+                var result = "yes";
                 $('#elPaso').show();
                 $('#Brazil').hide();
                 $('#Milwaukee').hide();
@@ -56,6 +58,7 @@ $(document).ready(function() {
           if (hemi === "hemiSouth") {
             if (devel === "develYes") {
               if (cheese === "cheeseYes") {
+                var result = "yes";
                 $('#Brazil').show();
                 $('#elPaso').hide();
                 $('#Milwaukee').hide();
@@ -70,6 +73,7 @@ $(document).ready(function() {
           if (hemi === "hemiSouth") {
             if (devel === "develNo") {
               if (cheese === "cheeseNo") {
+                var result = "yes";
                 $('#Antarctica').show();
                 $('#Brazil').hide();
                 $('#elPaso').hide();
