@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $("#prefs form").submit(function(event) {
-    var result = "no";
+    var index = -1
     var river = $("select#river").val();
     var temp = $("select#temp").val();
     var hemi = $("select#hemi").val();
@@ -10,37 +10,30 @@ $(document).ready(function() {
     $(destResults.join(', ')).fadeOut();
 
       if (river === "riverYes" && temp === "tempCool" && hemi === "hemiNorth" && devel === "develYes" && cheese === "cheeseYes") {
-        var result = "yes";
-        var index = 0
+        var index = 0;
       }
 
       if (river === "riverYes" && temp === "tempCool" && hemi === "hemiNorth" && devel === "develYes" && cheese === "cheeseNo") {
-        var result = "yes";
-        var index = 1
+        var index = 1;
       }
 
       if (river === "riverYes" && temp === "tempHot" && hemi === "hemiNorth" && devel === "develYes" && cheese === "cheeseYes") {
-        var result = "yes";
-        var index = 2
+        var index = 2;
       }
 
       if (river === "riverYes" && temp === "tempHot" && hemi === "hemiSouth" && devel === "develYes" && cheese === "cheeseYes") {
-        var result = "yes";
-        var index = 3
+        var index = 3;
       }
 
       if (river === "riverNo" && temp === "tempCool" && hemi === "hemiSouth" && devel === "develNo" && cheese === "cheeseNo") {
-        var result = "yes";
-        var index = 4
+        var index = 4;
       }
 
-      $(destResults[index]).fadeIn();
-
-
-      if (result === "no") {
-        alert('Whoops, no results for those selections, try something else!')
+      if (index === -1) {
+        alert('Whoops, no results for those selections, try something else!');
       }
+
+    $(destResults[index]).fadeIn();
     event.preventDefault();
-
     });
   });
